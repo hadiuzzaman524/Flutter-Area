@@ -45,12 +45,24 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+AssetImage assetImage=AssetImage('images/first.jpg');
+Image image=Image(image: assetImage,);
+
+AssetImage assetImage2=AssetImage('images/second.jpg');
+Image image2=Image(image: assetImage2,);
 
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Text('hello'),
+      /*
+      বডির মধ্যে অনেক গুল উইজেট দেখানোর জন্য কলাম উইজেট ব্যাবহার করা হয়,
+      সেটা দেখাবে নিচে নিচে।।
+      আবার রো ব্যাবহার করা হয় পাশে পাশে দেখানোর জন্য...
+       */
+      body:Column(
+        children: [image,image2],
+      )
     );
   }
 }

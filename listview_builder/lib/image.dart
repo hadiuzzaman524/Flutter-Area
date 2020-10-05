@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 class Imagex extends StatelessWidget {
  String name;
@@ -15,7 +16,25 @@ class Imagex extends StatelessWidget {
     );
 
     return Container(
-      child: image,
+      margin: EdgeInsets.all(10),
+      decoration:BoxDecoration(
+        border: Border.all(width: 5,color: Colors.green),
+      ),
+      child: Column(
+
+        children: [
+         Text(name,
+           style: TextStyle(
+             color: Colors.black,
+
+           ),
+         ),
+          Container(
+            padding: EdgeInsets.only(left: 20,right: 20),
+            child: image,
+          ),
+        ],
+      ),
     );
   }
 }

@@ -15,6 +15,13 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        textTheme: ThemeData.light().textTheme.copyWith(
+          body1: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
+          )
+        ),
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
@@ -42,10 +49,10 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body:ListView.builder(
+
           itemCount: mylist.length,
           itemBuilder: (BuildContext context,int index){
             return Imagex(mylist[index]['name'],mylist[index]['img']);
-
           // ignore: missing_return
           }
 

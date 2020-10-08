@@ -1,0 +1,4 @@
+#Wed Oct 07 21:26:22 BDT 2020
+base.0=G\:\\Education Area\\Flutter App Development\\networkimage_and_assetimg\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
